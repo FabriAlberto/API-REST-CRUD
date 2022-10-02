@@ -1,8 +1,8 @@
 {
-    "name": "node-template",
+    "name": "api-crud",
     "version": "1.0.0",
     "type": "module",
-    "description": "Plantilla base para los proyectos desarrollados en el curso de Node.JS de la plataforma LearnThis Academy",
+    "description": "Desarrollar una aplicación para la gestión de usuarios de una aplicación web.",
     "scripts": {
         "dev": "nodemon src/index.js",
         "start": "node src/index.js",
@@ -29,10 +29,24 @@
         "prettier": "2.7.1"
     },
     "imports": {
-        "#Lib/*": "./src/lib/*"
+        "#config/*": "./src/config/*",
+        "#controllers/*": "./src/controllers/*",
+        "#routes/*": "./src/routes/*",
+        "#schemas/*": "./src/schemas/*",
+        "#dto/*": "./src/dto/*"
     },
     "lint-staged": {
         "*.js": "eslint --fix",
         "*.{js,md}": "prettier --write"
+    },
+    "dependencies": {
+        "@sinclair/typebox": "^0.24.44",
+        "ajv": "^8.11.0",
+        "ajv-errors": "^3.0.0",
+        "ajv-formats": "^2.1.1",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.1",
+        "jose": "^4.10.0",
+        "mongoose": "^6.6.3"
     }
 }
