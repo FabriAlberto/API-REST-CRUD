@@ -7,7 +7,9 @@ const userJWTDTO= async(req,res,next)=>{
 
      try{
         const encoder=new TextEncoder();
-        const {payload}= await jwtVerify(authorization,encoder.encode(process.env.JWT_PRIVATE_KEY));
+        const {payload}= await jwtVerify(
+         authorization.split(" ")[1],
+         encoder.encode(process.env.JWT_PRIVATE_KEY));
 
         req.id=payload.id;
         next();

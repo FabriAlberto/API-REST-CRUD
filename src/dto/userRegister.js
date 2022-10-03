@@ -4,7 +4,6 @@ import addFormats from 'ajv-formats'
 import addErrors from 'ajv-errors'
 import { emailDTOschema, idDTOschema, nameDTOschema, passwordDTOschema, surnameDTOschema } from './dto-types.js';
 const registerSchemaValidator = Type.Object({
-
     _id: idDTOschema,
     name:nameDTOschema,
     surname: surnameDTOschema,

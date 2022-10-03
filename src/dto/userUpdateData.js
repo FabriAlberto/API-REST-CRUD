@@ -2,7 +2,7 @@ import { Type } from '@sinclair/typebox';
 import Ajv from 'ajv'
 import addFormats from 'ajv-formats'
 import addErrors from 'ajv-errors'
-import { emailDTOschema, idDTOschema, nameDTOschema, passwordDTOschema, surnameDTOschema } from './dto-types.js';
+import {nameDTOschema,  surnameDTOschema } from './dto-types.js';
 
 const updateDataSchemaValidator = Type.Object({
     name: nameDTOschema,

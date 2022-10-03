@@ -34,4 +34,4 @@ La idea es que utilicéis las herramientas que hemos ido viendo a lo largo de lo
 ## Requisitos no funcionales
 
 -   La aplicación deberá poderse ejecutar con la versión LTS de Node.JS(16).
--   Se puede utilizar cualquier base de datos, aunque es recomendable utilizar Mongo.DB ya que es la que hemos explicado en los videos.
+-   Se puede utilizar cualquier base de datos.

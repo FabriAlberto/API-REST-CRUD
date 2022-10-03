@@ -3,7 +3,7 @@ import mongoose, { model } from "mongoose";
 const { Schema } = mongoose;
 
 const userSchema = new Schema({
-  id: {
+  _id: {
     type: String,
     _id: false,
   },
@@ -13,7 +13,7 @@ const userSchema = new Schema({
     minLength: 2,
     maxLength: 20,
   },
-  apellido: {
+  surname: {
     type: String,
     require: true,
     minLength: 4,
@@ -30,5 +30,5 @@ const userSchema = new Schema({
 
   }
 })
-const useModel = model("User", userSchema);
-export default useModel;
+const UserModel = model("User", userSchema);
+export default UserModel;
